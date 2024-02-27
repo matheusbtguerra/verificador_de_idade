@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --s: 50px;
+    --c: #191b22;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#c300ff3d 68% 70%,#0000 72%;
+    background: 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.formSec {
+    display: flex;
+}
+
+.formulario {
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    background-image: url(https://media1.tenor.com/m/H9XKpWKu2cQAAAAd/imoneyslots.gif);
+    background-position: center;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 6%;
+    border-radius: 5%;
+    border: solid 4px #fff;
+    box-shadow:#c300ff 0px 22px 70px 4px;
+}
+
+.formulario h2 {
+    font-size: 1.8em;
+    color: #c300ff;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.formulario p {
+    background-color: white;
+    padding: 0;
+    color: #c300ff;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin: auto;
+    margin-top: 35%;
+    width: 78%;
+}
+
+.formulario input {
+    background-color: #c300ff;
+    padding: 0;
+    color: #fff;
+}
+
+.formulario button {
+    margin-top: 0;
+    padding: 7%;
+    width: 78%;
+    border-radius: 5%;
+    cursor: pointer;
+    box-shadow: rgb(195, 0, 255, 0.4) 0px 2px 4px, rgb(195, 0, 255, 0.3) 0px 7px 13px -3px, rgb(195, 0, 255, 0.2) 0px -3px 0px inset;
+    text-decoration: none;
+    border: none;
+    color: #c300ff;
+    background-color: #fff;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.logo {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    color: #fff;
+}
+
+.logo span {
+    color: #c300ff;
+    font-family: "Bebas Neue";
+}
+
+.logo h1 {
+    font-size: 2.8em;
+}

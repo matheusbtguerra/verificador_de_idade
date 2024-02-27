@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/13905/13905671.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Verificador IosBet</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="logo">
+                <h1>Ios<span>Bet</span></h1>
+            </div>
+        </section>
+
+        <section class="formSec">
+                <div class="formulario">
+                    <h2> Verificação de idade</h2>
+                    <p>Por favor, insira sua idade</p>
+                    <input type="number" name="" id="idadeInput">
+                    <br>
+                    <button onclick="verficarIdade()">Verificar</button>
+                </div>
+        </section> 
+    </main>
+
+    <footer>
+
+    </footer>
+    
+
+    <script>
+        function verficarIdade(){
+            var idade = parseInt(document.getElementById("idadeInput").value);
+
+            if (idade>=18) {
+                window.location.href = "index.html";
+            } else {
+                window.location.href = "menor.html"
+            }
+        }
+    </script>
+</body>
+</html>
